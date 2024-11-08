@@ -1,5 +1,7 @@
+<style>
+  <?php include('./css/navbar.css') ?>
+</style>
+
 <nav>
-  <div>
-    <h1>Minha Página PHP</h1>
-  </div>
+  <h1>Minha Página PHP</h1>
 </nav>

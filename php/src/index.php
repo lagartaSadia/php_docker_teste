@@ -7,7 +7,7 @@
 </head>
 <body>
   <body>
-    <?php include('./partials/navbar.php') ?>
+    <?php include('./pages/itens.php') ?>
   </body>
 </body>
 </html>
