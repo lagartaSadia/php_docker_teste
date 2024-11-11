@@ -7,4 +7,24 @@ services:
     volumes:
       - ./php/src:/var/www/html/
     ports:
-      - 8000:80
+      - 80:80
+  db:
+    container_name: db
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: MYSQL_ROOT_PASSWORD
+      MYSQL_DATABASE: MY_DATABASE
+      MYSQL_USER: user
+      MYSQL_PASSWORD: user_pass
+    ports:
+      - "3306:3306"
+  phpmyadmin:
+      image: phpmyadmin/phpmyadmin
+      ports:
+          - '8080:80'
+      restart: always
+      environment:
+          PMA_HOST: db
+      depends_on:
+          - db

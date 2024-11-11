@@ -1,5 +1,8 @@
 <style>
-  <?php include('./css/navbar.css') ?>
+  nav {
+    display: flex;
+    justify-content: center;
+  }
 </style>
 
 <nav>

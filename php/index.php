@@ -8,7 +8,6 @@
 <body>
   <body>
     <?php include('./pages/itens.php') ?>
-    <a href="./pages/login.php">Login</a>
   </body>
 </body>
 </html>
