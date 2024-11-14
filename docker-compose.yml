@@ -1,7 +1,7 @@
 services:
   php-apache-environment:
     container_name: php-apache
-    build: 
+    build:
       context: ./php
       dockerfile: Dockerfile
     volumes:
