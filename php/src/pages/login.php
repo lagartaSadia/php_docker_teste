@@ -49,7 +49,7 @@ if (isset($_POST['email']) || isset($_POST['senha'])) {
   <form action="" method="post">
     <label for="email">E-mail</label>
     <input type="email" name="email" id="email">
-    <label for="senha">E-mail</label>
+    <label for="senha">Senha</label>
     <input type="password" name="senha" id="senha">
     <button type="submit">Logar</button>
   </form>
