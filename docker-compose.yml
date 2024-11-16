@@ -17,6 +17,8 @@ services:
       MYSQL_DATABASE: MY_DATABASE
       MYSQL_USER: user
       MYSQL_PASSWORD: user_pass
+    volumes:
+      - ./php/src/data:/var/lib/mysql
     ports:
       - "3306:3306"
   phpmyadmin:
